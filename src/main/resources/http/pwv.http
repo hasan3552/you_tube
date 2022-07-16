@@ -1,0 +1,8 @@
+POST http://localhost:8084/video_watch
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4NjIxMTksImV4cCI6MTY1Nzk0ODUxOSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.mRmIG3v6ph2xXzfkY1jq9jSGDuvIMAcMMVC2qIUwREw
+
+{
+  "videoId": "8a8a82a182006f730182006f8e0e0000",
+  "status": "LIKE"
+}

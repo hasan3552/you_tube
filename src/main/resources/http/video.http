@@ -1,0 +1,27 @@
+POST http://localhost:8084/video
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4NjIxMTksImV4cCI6MTY1Nzk0ODUxOSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.mRmIG3v6ph2xXzfkY1jq9jSGDuvIMAcMMVC2qIUwREw
+
+{
+  "name": "name",
+  "description": "description",
+  "attach": "4028abcd81f317940181f31970420001",
+  "tags":  ["#1","#s","#h","#2"],
+  "channelId": "4028abcd81f3131f0181f316075a0000",
+  "categoryId": 1,
+  "review": "8a8a82a182004d75018200513b6f0001"
+}
+
+###
+GET http://localhost:8084/video/public/pagination?categoryId=1&size=2&page=1
+
+###
+GET http://localhost:8084/video/public/search_title?search_text=A&size=2&page=0
+
+###
+GET http://localhost:8084/video/public/search_tag?tagId=5&size=4&page=0
+
+###
+GET http://localhost:8084/video/8a8a82a182006f730182006f8e0e0000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4NjIxMTksImV4cCI6MTY1Nzk0ODUxOSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.mRmIG3v6ph2xXzfkY1jq9jSGDuvIMAcMMVC2qIUwREw
+
